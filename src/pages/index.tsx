@@ -10,6 +10,7 @@ import Services from "@/components/services";
 import { roboto } from "@/utils/fonts";
 import About from "@/components/aboutus";
 import Choose from "@/components/choose";
+import Stats from "@/components/stats";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -46,6 +47,9 @@ export default function Home() {
         <Box sx={{ mt: 20 }}>
           <Choose />
         </Box>
+      </Box>
+      <Box>
+        <Stats />
       </Box>
     </>
   );
