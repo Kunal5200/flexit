@@ -7,4 +7,5 @@ export enum COLORS {
   PARACOLOR = "#BDBDC4",
   BORDERWHITE = "1px solid #fff",
   CARDCOLOR = "#062241",
+  BORDER4PX = "4px solid #09AFF4",
 }

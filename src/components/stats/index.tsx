@@ -3,6 +3,7 @@ import React from "react";
 import bannerimage from "@/bannerImage/pattern-bg-3.jpg";
 import { COLORS } from "@/utils/global";
 import StatsCard from "./statsCard";
+import { data } from "@/assets/data";
 const Stats = () => {
   return (
     <Box>
@@ -19,17 +20,22 @@ const Stats = () => {
           sx={{
             backgroundColor: "#00000089",
             height: "100%",
-            opacity: 0.4,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
           <Container maxWidth="lg">
-            <Grid2 container>
-              <Grid2 size={3}>
-                <StatsCard />
-              </Grid2>
+            <Grid2 container spacing={3}>
+              {data.statsData.map((val, i) => (
+                <Grid2 size={3} key={i}>
+                  <StatsCard
+                    Icon={val.Icon}
+                    heading={val.heading}
+                    number={val.number}
+                  />
+                </Grid2>
+              ))}
             </Grid2>
           </Container>
         </Box>

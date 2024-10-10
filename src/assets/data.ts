@@ -11,6 +11,10 @@ import top from "@/icons/top.svg";
 import game from "@/icons/game.svg";
 import map from "@/icons/map.svg";
 import support from "@/icons/support.svg";
+import ProjectIcon from "@/icons/projects.svg";
+import JobIcon from "@/icons/job.svg";
+import PersonIcon from "@/icons/person.svg";
+import TargetIcon from "@/icons/target.svg";
 export const data = {
   routes: [
     {
@@ -147,6 +151,28 @@ export const data = {
       heading: "powerful strategies",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.",
+    },
+  ],
+  statsData: [
+    {
+      Icon: ProjectIcon,
+      number: "750+",
+      heading: "finished projects",
+    },
+    {
+      Icon: JobIcon,
+      number: "23+",
+      heading: "Created Jobs",
+    },
+    {
+      Icon: PersonIcon,
+      number: "200+",
+      heading: "Happy Customers",
+    },
+    {
+      Icon: TargetIcon,
+      number: "28+",
+      heading: "Years of Experience",
     },
   ],
 };
