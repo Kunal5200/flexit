@@ -93,7 +93,7 @@ export default function Home() {
             </Button>
           </Stack>
           <Box mt={2}>
-            <Portfolio/>
+            <Portfolio />
           </Box>
         </Container>
       </Box>
