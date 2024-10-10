@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
-import { Container, Box } from "@mui/material";
+import { Container, Box, Stack, Typography, Button } from "@mui/material";
 import Banner from "@/components/banner";
 import { data } from "@/assets/data";
 import { COLORS } from "@/utils/global";
@@ -11,6 +11,9 @@ import { roboto } from "@/utils/fonts";
 import About from "@/components/aboutus";
 import Choose from "@/components/choose";
 import Stats from "@/components/stats";
+import Subheading from "@/components/subHeading";
+import { ArrowForward } from "@mui/icons-material";
+import Portfolio from "@/components/portfolio";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -50,6 +53,49 @@ export default function Home() {
       </Box>
       <Box>
         <Stats />
+      </Box>
+      <Box sx={{ backgroundColor: COLORS.DARKBLUE, p: 2 }}>
+        <Container maxWidth="lg">
+          <Subheading title="Portfolio" fontSize={12} />
+          <Stack
+            direction={"row"}
+            alignItems={"center"}
+            justifyContent={"space-between"}
+          >
+            <Typography
+              fontSize={40}
+              color="#fff"
+              textTransform={"capitalize"}
+              sx={{ fontFamily: roboto.style, mt: 1 }}
+            >
+              Awesome portfolio
+            </Typography>
+            <Button
+              sx={{
+                backgroundColor: COLORS.PRIMARY,
+                color: COLORS.WHITE,
+                ":hover": {
+                  color: COLORS.PRIMARY,
+                  backgroundColor: "transparent",
+                  "& svg": {
+                    transform: "translateX(8px)",
+                  },
+                },
+                "& svg": {
+                  transition: "0.5s ease all",
+                },
+                border: COLORS.BORDER1PX,
+                width: 150,
+                p: 1,
+              }}
+            >
+              See More <ArrowForward sx={{ fontSize: 25 }} />
+            </Button>
+          </Stack>
+          <Box mt={2}>
+            <Portfolio/>
+          </Box>
+        </Container>
       </Box>
     </>
   );

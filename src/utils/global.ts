@@ -9,3 +9,11 @@ export enum COLORS {
   CARDCOLOR = "#062241",
   BORDER4PX = "4px solid #09AFF4",
 }
+
+export enum PORTFOLIO {
+  ALL = "All",
+  MOBILEAPPS = "Mobile Apps",
+  CLOUD = "Cloud",
+  DATAANALYSIS = "Data Analysis",
+  HOSTING = "Hosting",
+}
