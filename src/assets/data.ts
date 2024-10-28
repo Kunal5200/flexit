@@ -15,6 +15,22 @@ import ProjectIcon from "@/icons/projects.svg";
 import JobIcon from "@/icons/job.svg";
 import PersonIcon from "@/icons/person.svg";
 import TargetIcon from "@/icons/target.svg";
+import mobileApps from "@/services/1.jpg";
+import cloud from "@/services/2.jpg";
+import dataAnalysis from "@/services/3.jpg";
+import hosting from "@/services/4.jpg";
+import SEO from "@/services/5.jpg";
+import other from "@/services/6.jpg";
+import client1 from "@/clients/1.png";
+import client2 from "@/clients/2.png";
+import client3 from "@/clients/3.png";
+import client4 from "@/clients/4.png";
+import client5 from "@/clients/5.png";
+import client6 from "@/clients/6.png";
+import client7 from "@/clients/7.png";
+import avatar1 from "@/testimonials/avatar1.png";
+import avatar2 from "@/testimonials/avatar2.png";
+import avatar3 from "@/testimonials/avatar3.png";
 export const data = {
   routes: [
     {
@@ -173,6 +189,96 @@ export const data = {
       Icon: TargetIcon,
       number: "28+",
       heading: "Years of Experience",
+    },
+  ],
+  portfolioData: [
+    {
+      img: mobileApps.src,
+      heading: "Mobile Apps",
+    },
+    {
+      img: cloud.src,
+      heading: "Cloud",
+    },
+    {
+      img: dataAnalysis.src,
+      heading: "Data Analysis",
+    },
+    {
+      img: hosting.src,
+      heading: "Hosting",
+    },
+    {
+      img: SEO.src,
+      heading: "SEO",
+    },
+    {
+      img: other.src,
+      heading: "Other Category",
+    },
+  ],
+  mobileApps: [
+    {
+      img: mobileApps.src,
+      heading: "Mobile Apps",
+    },
+    {
+      img: hosting.src,
+      heading: "Hosting",
+    },
+    {
+      img: other.src,
+      heading: "Other Category",
+    },
+  ],
+  cloud: [
+    {
+      img: cloud.src,
+      heading: "Cloud",
+    },
+  ],
+
+  clientsSlider: [
+    {
+      img: client1.src,
+    },
+    {
+      img: client2.src,
+    },
+    {
+      img: client3.src,
+    },
+    {
+      img: client4.src,
+    },
+    {
+      img: client5.src,
+    },
+    {
+      img: client6.src,
+    },
+    {
+      img: client7.src,
+    },
+  ],
+  testimonials: [
+    {
+      img: avatar1,
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      name: "K. Sharma",
+    },
+    {
+      img: avatar2,
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      name: "K. Sharma",
+    },
+    {
+      img: avatar3,
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      name: "K. Sharma",
     },
   ],
 };

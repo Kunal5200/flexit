@@ -6,11 +6,18 @@ import React from "react";
 interface headingProps {
   title: string;
   fontSize?: number;
+  justifyContent?: string;
 }
-const Subheading = ({ title, fontSize }: headingProps) => {
+const Subheading = ({ title, fontSize, justifyContent }: headingProps) => {
   return (
     <div>
-      <Stack direction={"row"} alignItems={"center"} spacing={1} mt={2}>
+      <Stack
+        direction={"row"}
+        alignItems={"center"}
+        spacing={1}
+        mt={2}
+        justifyContent={justifyContent}
+      >
         <Box
           sx={{
             width: 5,

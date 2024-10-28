@@ -8,6 +8,9 @@ export enum COLORS {
   BORDERWHITE = "1px solid #fff",
   CARDCOLOR = "#062241",
   BORDER4PX = "4px solid #09AFF4",
+  BLACKOPACITY = "#00000059",
+  BLUETEXT = "#5FCBF8",
+  GREY = "#69626D",
 }
 
 export enum PORTFOLIO {

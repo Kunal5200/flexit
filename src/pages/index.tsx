@@ -14,6 +14,8 @@ import Stats from "@/components/stats";
 import Subheading from "@/components/subHeading";
 import { ArrowForward } from "@mui/icons-material";
 import Portfolio from "@/components/portfolio";
+import Clients from "@/components/clients";
+import Testimonials from "@/components/testimonials";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -92,10 +94,18 @@ export default function Home() {
               See More <ArrowForward sx={{ fontSize: 25 }} />
             </Button>
           </Stack>
-          <Box mt={2}>
+          <Box mt={2} sx={{ py: 5 }}>
             <Portfolio />
           </Box>
         </Container>
+      </Box>
+      <Box sx={{ backgroundColor: COLORS.PRIMARY, p: 5 }}>
+        <Container maxWidth="lg">
+          <Clients data={data.clientsSlider} />
+        </Container>
+      </Box>
+      <Box>
+        <Testimonials />
       </Box>
     </>
   );
