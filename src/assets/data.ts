@@ -31,6 +31,9 @@ import client7 from "@/clients/7.png";
 import avatar1 from "@/testimonials/avatar1.png";
 import avatar2 from "@/testimonials/avatar2.png";
 import avatar3 from "@/testimonials/avatar3.png";
+import blog1 from "@/blogs/1.jpg";
+import blog2 from "@/blogs/2.jpg";
+import blog3 from "@/blogs/3.jpg";
 export const data = {
   routes: [
     {
@@ -279,6 +282,36 @@ export const data = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       name: "K. Sharma",
+    },
+  ],
+
+  blogs: [
+    {
+      img: blog1.src,
+      date: "05 oct 2022",
+      category: "Hosting",
+      name: "Kunal Sharma",
+      heading: "How litespeed technology works to speed up your site",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae",
+    },
+    {
+      img: blog2.src,
+      date: "15 sep 2022",
+      category: "Web Dev",
+      name: "Kunal Sharma",
+      heading: "give your website a new look and feel with themes",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae",
+    },
+    {
+      img: blog3.src,
+      date: "27 aug 2022",
+      category: "SEO",
+      name: "Kunal Sharma",
+      heading: "the role of domain names in SEO world explained",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae",
     },
   ],
 };

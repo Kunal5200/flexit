@@ -11,6 +11,8 @@ export enum COLORS {
   BLACKOPACITY = "#00000059",
   BLUETEXT = "#5FCBF8",
   GREY = "#69626D",
+  BLOGCARD = "#062241",
+  BLOGTEXT = "#B5BDC7",
 }
 
 export enum PORTFOLIO {

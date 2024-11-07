@@ -16,6 +16,7 @@ import { ArrowForward } from "@mui/icons-material";
 import Portfolio from "@/components/portfolio";
 import Clients from "@/components/clients";
 import Testimonials from "@/components/testimonials";
+import Blogs from "@/components/blogs";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -106,6 +107,9 @@ export default function Home() {
       </Box>
       <Box>
         <Testimonials />
+      </Box>
+      <Box sx={{ backgroundColor: COLORS.DARKBLUE, pt: 5, pb: 10 }}>
+        <Blogs />
       </Box>
     </>
   );
